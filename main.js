@@ -1,5 +1,5 @@
 "use strict"
-
+// table
 function renderCoffee(coffee) {
     var html = '<div class="coffee">';
     html += '<h2>' + coffee.name + '</h2>';
@@ -17,6 +17,7 @@ function renderCoffees(coffees) {
     return html;
 }
 
+//drop-down menu
 function updateCoffees(e) {
     e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
@@ -47,6 +48,11 @@ var coffees = [
     {id: 13, name: 'Italian', roast: 'dark'},
     {id: 14, name: 'French', roast: 'dark'},
 ];
+
+var selectElement = document.getElementById('roast-selection');
+
+selectElement.addEventListener('change', updateCoffees);
+
 
 var coffeeContainer = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
