@@ -26,6 +26,8 @@ function updateCoffees(e) {
     coffees.forEach(function(coffee) {
         if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes(nameQuery)) {
             filteredCoffees.push(coffee);
+        } else if(selectedRoast === "all types" && coffee.name.toLowerCase().includes(nameQuery)) {
+            filteredCoffees.push(coffee);
         }
     });
     coffeeContainer.innerHTML = renderCoffees(filteredCoffees);
@@ -49,6 +51,7 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
+//auto roast drop-down
 var selectElement = document.getElementById('roast-selection');
 
 selectElement.addEventListener('change', updateCoffees);
@@ -59,8 +62,12 @@ var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
 var nameSelection = document.getElementById('name-selection');
 
+
 coffeeContainer.innerHTML = renderCoffees(coffees);
 
+//auto search box
+nameSelection.addEventListener('keyup', updateCoffees);
+
+//submit button
 submitButton.addEventListener('click', updateCoffees);
 
-//working on the search box
