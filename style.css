@@ -8,11 +8,14 @@ td, th {
     padding: 5px 10px;
 }
 
-.id-class {
-    display: none;
-}
-
 .btn {
     display: inline-block;
-    width: 100%;
+    width: 55%;
+
+}
+
+.first-coffee, .second-coffee {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
