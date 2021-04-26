@@ -62,3 +62,5 @@ var nameSelection = document.getElementById('name-selection');
 coffeeContainer.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
+
+//working on the search box
