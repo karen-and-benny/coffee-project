@@ -10,7 +10,9 @@ td, th {
 
 .btn {
     display: inline-block;
-    width: 55%;
+    width: calc(60% + 50px);
+    margin-right: 15px;
+
 
 }
 
