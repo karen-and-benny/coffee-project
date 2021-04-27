@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 table {
     border-collapse: collapse;
     margin: 15px 0;
@@ -16,12 +18,22 @@ td, th {
 }
 
 .jumbotron {
-    background-image: url("img/paris.jpeg");
-    background-size: contain;
+    font-family: 'Dancing Script', cursive;
+    background-color: #644117;
+    /*!*background-image: url("img/coffeebeansbg.jpeg");*!
+    background-size: cover;*/
+}
+
+#javacup {
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: flex-start ;
 }
 
 body {
-    background-image: url("img/coffeebeansbg.jpeg");
+    background-image: url("img/java.jpg");
+    background-size: contain;
 }
 
 /*.btn {*/
