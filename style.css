@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 table {
     border-collapse: collapse;
@@ -38,13 +39,26 @@ td, th {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
-    text-shadow: 2px 2px #807c7c;
+    text-shadow: 2px 2px #a4a2a2;
+}
+.choose-coffee {
+    padding-bottom: 25px;
+}
+.card {
+    padding: 25px;
+    background: rgba(188, 188, 188, 0.9);
+    border-color: #6b5f5f;
+    box-shadow:  5px 10px #3c2f2f;
 }
 body {
+    font-family: 'Open Sans', sans-serif;
     background-image: url("img/java.jpg");
     background-size: contain;
 }
 
+.card-body {
+    padding:0;
+}
 /*.btn {*/
 /*    display: inline-block;*/
 /*    width: calc(60% + 50px);*/

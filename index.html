@@ -8,97 +8,141 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!--Jumbotron-->
 <div id="container">
-       <!-- <h1 class="text-center">Coffee!</h1>
+    <header>
 
-        <form class="first-coffee">
-            <div class="form-group col-8">
-                <label for="roast-selection">Roast</label>
-                <select id="roast-selection" class="form-control">
-                    <option>light roast</option>
-                    <option>medium roast</option>
-                    <option>dark roast</option>
-                    <option>all types of roast</option>
-                </select>
+        <div class="jumbotron jumbotron-fluid">
+            <div>
+                <img id="javacup" src="img/javacup.png" alt="coffee cup">
             </div>
-            <div class="form-group col-8">
-                <div class="form-group">
-                    <label for="id-class">Coffee Name</label>
-                    <input type="text" id="id-class" class="form-control" placeholder="coffee name goes here">
-                </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <section>
-            <h2 class="text-center">Add a Coffee</h2>
-            <form class="second-coffee">
-                <div class="form-group col-8">
-                    <label for="roast-selection-pt2">Roast</label>
-                    <select id="roast-selection-pt2" class="form-control">
-                        <option>light roast</option>
-                        <option>medium roast</option>
-                        <option>dark roast</option>
-                    </select>
-                </div>
-                <div class="form-group col-8">
-                    <div class="form-group">
-                        <label for="id-class">Coffee Name</label>
-                        <input type="text" id="id-class-pt2" class="form-control" placeholder="coffee name goes here">
-                    </div>
-                </div>
-                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
-            </form>
-        </section>-->
-        <header>
+            <div class="jumbo-sign display-4 coffee-title container opaque-bg">Café KB Code</div>
+        </div>
+    </header>
+</div>
 
-            <div class="jumbotron jumbotron-fluid">
-                <div>
-                    <img id="javacup" src="img/javacup.png" alt="coffee cup">
-                </div>
-                <div class="jumbo-sign display-4 coffee-title container opaque-bg">KB Coffee Shop</div>
-<!--                <div class="container opaque-bg text-dark">-->
-<!--                    <h1 class="jumbo-sign display-4">hi</h1>-->
-<!--                </div>-->
-            </div>
+<!--main content-->
 
-        </header>
+<!--    OUR CODE THAT WORKS -->
+<!--<form>-->
+<!--    <label for="roast-selection"></label>-->
+<!--    <select id="roast-selection">-->
+<!--        <option>all types</option>-->
+<!--        <option>light</option>-->
+<!--        <option>medium</option>-->
+<!--        <option>dark</option>-->
+<!--    </select>-->
+<!--    <label for="name-selection">Name Select</label>-->
+<!--    <input type="text" id="name-selection">-->
+<!--    <input id="submit" type="submit">-->
+<!--</form>-->
+<!--<h2>Add Coffee</h2>-->
+<!--<form name="user">-->
+<!--    <label for="user-selection"></label>-->
+<!--    <select id="user-selection">-->
+<!--        <option>light</option>-->
+<!--        <option>medium</option>-->
+<!--        <option>dark</option>-->
+<!--    </select>-->
+<!--    <label for="user-add">Name Select</label>-->
+<!--    <input type="text" id="user-add">-->
+<!--    <input id="submit2" type="submit">-->
+<!--</form>-->
+<!--<div id="coffees"></div>-->
+
+<!--    TESTING BOOTSTRAP-->
+<div class="card" style="width: 30rem;">
+    <div class="card-body">
+        <h2 class="choose-coffee text-center">Choose your coffee</h2>
         <form>
             <label for="roast-selection"></label>
-            <select id="roast-selection">
+            <select class="roast-type " id="roast-selection">
                 <option>all types</option>
                 <option>light</option>
                 <option>medium</option>
                 <option>dark</option>
             </select>
-            <label for="name-selection">Name Select</label>
+            <br>
+            <label for="name-selection">coffee name</label>
             <input type="text" id="name-selection">
-            <input id="submit" type="submit" />
+            <input id="submit" type="submit"/>
         </form>
-    <h2>Add Coffee</h2>
-        <form name="user">
-            <label for="user-selection"></label>
-            <select id="user-selection">
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
-            </select>
-            <label for="user-add">Name Select</label>
-            <input type="text" id="user-add">
-            <input id="submit2" type="submit"/>
-
-        </form>
-
-
-        <div id="coffees"></div>
+    </div>
 </div>
 
+<!--<div class="card" style="width: 30rem;">-->
+<!--    <div class="card-body">-->
+<!--        <h2>Add Coffee</h2>-->
+<!--        <form name="user">-->
+<!--            <label for="user-selection"></label>-->
+<!--            <select id="user-selection">-->
+<!--                <option>light</option>-->
+<!--                <option>medium</option>-->
+<!--                <option>dark</option>-->
+<!--            </select>-->
+<!--            <label for="user-add">coffee</label>-->
+<!--            <input type="text" id="user-add">-->
+<!--            <input id="submit2" type="submit"/>-->
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+<div class="card" style="width: 30rem;">
+    <div class="card-body">
+        <div id="coffees"></div>
+    </div>
+</div>
 
+<!--bootstrap -->
+<!-- <form class="first-coffee ">-->
+<!--     <div class="form-group col-8">-->
+<!--         <label for="roast-selection"></label>-->
+<!--         <select id="roast-selection" class="form-control">-->
+<!--             <option>all types</option>-->
+<!--             <option>light</option>-->
+<!--             <option>medium</option>-->
+<!--             <option>dark</option>-->
+<!--         </select>-->
+<!--     </div>-->
+<!--     <div class="form-group col-8">-->
+<!--         <div class="form-group">-->
+<!--             <label for="name-selection">Coffee Name</label>-->
+<!--             <input type="text" id="name-selection" class="form-control" placeholder="coffee name goes here">-->
+<!--         </div>-->
+<!--     </div>-->
+<!--     <button type="submit" class="btn btn-primary">Submit</button>-->
+<!-- </form>-->
+<!-- <section>-->
+<!--     <h2 class="text-center">Add a Coffee</h2>-->
+<!--     <form class="second-coffee">-->
+<!--         <div class="form-group col-8">-->
+<!--             <label for="user-selection">Roast</label>-->
+<!--             <select id="user-selection" class="form-control">-->
+<!--                 <option>light</option>-->
+<!--                 <option>medium</option>-->
+<!--                 <option>dark</option>-->
+<!--             </select>-->
+<!--         </div>-->
+<!--         <div class="form-group col-8">-->
+<!--             <div class="form-group">-->
+<!--                 <label for="name-selection">Coffee Name</label>-->
+<!--                 <input type="text" id="name-selection2" class="form-control" placeholder="coffee name goes here">-->
+<!--             </div>-->
+<!--         </div>-->
+<!--         <button id="submit" type="submit" class="btn btn-primary">Submit</button>-->
+<!--         <div id="coffees"></div>-->
+<!--     </form>-->
+<!--     -->
+<!-- </section>-->
+<!--</div>-->
+
+<!--bootstrap script tags-->
 <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-            crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
 </html>
+
