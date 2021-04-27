@@ -35,11 +35,12 @@ function updateCoffees(e) {
 
 //Add Coffee input
 
-// (function() {
-//     var userInput = document.forms.user.user-add;
-//
-//     document.log(userInput.value)
-// })();
+function addCoffee() {
+    var userInput = document.forms.user.user-add;
+
+    document.log(userInput.value)
+}
+
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [

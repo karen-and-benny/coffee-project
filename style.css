@@ -22,14 +22,17 @@ td, th {
 .jumbotron {
     font-family: 'Dancing Script', cursive;
     background-color: #644117;
-    /*!*background-image: url("img/coffeebeansbg.jpeg");*!
-    background-size: cover;*/
+    background-image: url("img/brownpatter.jpeg");
+    background-size: cover;
+    border-bottom: 5px solid gold;
     padding: 0;
 }
+
 
 #javacup {
     height: 200px;
     width: auto;
+    display: inline-block;
     position: relative;
     padding-left: 335px;
 }
@@ -49,15 +52,34 @@ td, th {
     background: rgba(188, 188, 188, 0.9);
     border-color: #6b5f5f;
     box-shadow:  5px 10px #3c2f2f;
+    margin-left: 200px;
 }
 body {
     font-family: 'Open Sans', sans-serif;
     background-image: url("img/java.jpg");
     background-size: contain;
+    border-top: 5px solid gold;
 }
 
 .card-body {
     padding:0;
+}
+
+#submit {
+    margin-top: 10px;
+    background-color: #644117;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+label {
+    margin: -10px 0;
 }
 /*.btn {*/
 /*    display: inline-block;*/
