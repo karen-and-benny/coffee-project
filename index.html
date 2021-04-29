@@ -12,88 +12,81 @@
 <header>
     <div class="jumbotron jumbotron-fluid">
 
-            <img id="javacup" src="img/javacup.png" alt="coffee cup">
+        <img id="javacup" src="img/javacup.png" alt="coffee cup">
 
         <div class="jumbo-sign display-4 coffee-title container opaque-bg">Café KB Code</div>
     </div>
 </header>
+<!--main content-->
 <div id="container">
-    <div class="row">
-
-        <!--main content-->
-
-        <!--    OUR CODE THAT WORKS -->
-        <!--<form>-->
-        <!--    <label for="roast-selection"></label>-->
-        <!--    <select id="roast-selection">-->
-        <!--        <option>all types</option>-->
-        <!--        <option>light</option>-->
-        <!--        <option>medium</option>-->
-        <!--        <option>dark</option>-->
-        <!--    </select>-->
-        <!--    <label for="name-selection">Name Select</label>-->
-        <!--    <input type="text" id="name-selection">-->
-        <!--    <input id="submit" type="submit">-->
-        <!--</form>-->
-        <!--<h2>Add Coffee</h2>-->
-        <!--<form name="user">-->
-        <!--    <label for="user-selection"></label>-->
-        <!--    <select id="user-selection">-->
-        <!--        <option>light</option>-->
-        <!--        <option>medium</option>-->
-        <!--        <option>dark</option>-->
-        <!--    </select>-->
-        <!--    <label for="user-add">Name Select</label>-->
-        <!--    <input type="text" id="user-add">-->
-        <!--    <input id="submit2" type="submit">-->
-        <!--</form>-->
-        <!--<div id="coffees"></div>-->
-        <div class="card col w-50" style="width: 30rem;">
-            <div class="card-body">
-                <div id="coffees"></div>
-            </div>
-        </div>
-        <!--    TESTING BOOTSTRAP-->
-        <div class="card col" style="width: 30rem;">
-            <div class="card-body">
-                <h2 class="choose-coffee text-center">Choose your coffee</h2>
-                <form>
-                    <label for="roast-selection">Choose a Roast</label>
-                    <br>
-                    <select class="roast-type " id="roast-selection">
-                        <option>all types</option>
-                        <option>light</option>
-                        <option>medium</option>
-                        <option>dark</option>
-                    </select>
-                    <br>
-                    <label for="name-selection">Search Coffee</label>
-                    <br>
-                    <input type="text" id="name-selection">
-                    <input id="submit" type="submit"/>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="card" style="width: 30rem;">
-        <div class="card-body">
-            <h2>Add Coffee</h2>
-            <form name="user">
-                <label for="user-selection"></label>
-                <select id="user-selection">
-                    <option value="light">light</option>
-                    <option value="medium">medium</option>
-                    <option value="dark">dark</option>
+    <main class="coffeesAndSearch">
+        <div class="chooseCoffee">
+            <h2 class="coffeeTitle text-center">Choose your coffee</h2>
+            <form>
+                <label for="roast-selection">Choose a Roast</label>
+                <br>
+                <select class="roast-type dropdown" id="roast-selection">
+                    <option>all types</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
                 </select>
-                <label for="user-add">coffee</label>
-                <input type="text" id="user-add">
-                <input id="submit2" type="submit"/>
+                <br>
+                <label for="name-selection">Search Coffee</label>
+                <br>
+                <input type="text" id="name-selection">
+                <input id="submit" type="submit"/>
             </form>
         </div>
-    </div>
-
+        <div class="allTheCoffees">
+            <div id="coffees"></div>
+        </div>
+    </main>
+    <aside class="addCoffeee">
+        <h2 class="text-center pb-10">Add Coffee</h2>
+        <form name="user">
+            <label for="user-selection">Roast type</label>
+            <select id="user-selection">
+                <option value="light">light</option>
+                <option value="medium">medium</option>
+                <option value="dark">dark</option>
+            </select>
+            <br>
+            <label for="user-add">coffee</label>
+            <input type="text" id="user-add">
+            <br>
+            <input id="submit2" type="submit"/>
+        </form>
+    </aside>
 </div>
 
+
+<!--    OUR CODE THAT WORKS -->
+<!--<form>-->
+<!--    <label for="roast-selection"></label>-->
+<!--    <select id="roast-selection">-->
+<!--        <option>all types</option>-->
+<!--        <option>light</option>-->
+<!--        <option>medium</option>-->
+<!--        <option>dark</option>-->
+<!--    </select>-->
+<!--    <label for="name-selection">Name Select</label>-->
+<!--    <input type="text" id="name-selection">-->
+<!--    <input id="submit" type="submit">-->
+<!--</form>-->
+<!--<h2>Add Coffee</h2>-->
+<!--<form name="user">-->
+<!--    <label for="user-selection"></label>-->
+<!--    <select id="user-selection">-->
+<!--        <option>light</option>-->
+<!--        <option>medium</option>-->
+<!--        <option>dark</option>-->
+<!--    </select>-->
+<!--    <label for="user-add">Name Select</label>-->
+<!--    <input type="text" id="user-add">-->
+<!--    <input id="submit2" type="submit">-->
+<!--</form>-->
+<!--<div id="coffees"></div>-->
 
 <!--bootstrap -->
 <!-- <form class="first-coffee ">-->

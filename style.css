@@ -1,18 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-table {
-    border-collapse: collapse;
-    margin: 15px 0;
-}
-
-td, th {
-    border: 1px solid black;
-    padding: 5px 10px;
-}
-
 .opaque-bg{
-    background: rgba(229, 226, 226, 0.2);
+    background: rgba(214, 211, 211, 0.2);
     text-align: center;
     max-width: 100%;
     padding: 0;
@@ -20,14 +10,14 @@ td, th {
 }
 
 .jumbotron {
+    width: 100%;
     font-family: 'Dancing Script', cursive;
     background-color: #644117;
     background-image: url("img/brownpatter.jpeg");
     background-size: cover;
-    border-bottom: 5px solid gold;
+    border-bottom: 10px solid #887226;
     padding: 0;
 }
-
 
 #javacup {
     height: 200px;
@@ -42,55 +32,59 @@ td, th {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 3em;
-    text-shadow: 2px 2px #a4a2a2;
-}
-.choose-coffee {
-    padding-bottom: 25px;
-}
-.card {
-    padding: 25px;
-    background: rgba(188, 188, 188, 0.9);
-    border-color: #6b5f5f;
-    box-shadow:  5px 10px #3c2f2f;
-    margin-left: 200px;
+
+    /*goldenrod with light mocha outline*/
+    color: goldenrod;
+    text-shadow: 2px 2px #7e7a7a;
+
+    /*white with light outline*/
+    /*text-shadow: 2px 2px #918e8e;*/
+
+    /*goldenrod with dark outline*/
+    /*color: goldenrod;*/
+    /*text-shadow: 2px 2px #261e18;*/
+
+    /*brown with white-ish outline*/
+    /*text-shadow: 2px 2px #98908b;*/
+    /*color: #302118;*/
 }
 body {
     font-family: 'Open Sans', sans-serif;
     background-image: url("img/java.jpg");
     background-size: contain;
-    border-top: 5px solid gold;
+    border-top: 10px solid #887226;
+    color: white;
+}
+.coffeeTitle {
+    padding-bottom: 25px;
+}
+.allTheCoffees , .addCoffeee , .chooseCoffee {
+    background: rgba(47, 34, 34, 0.7);
+    padding: 10px;
+    margin: 20px 60px 20px 60px;
+    border-color: #6b5f5f;
+    box-shadow:  5px 10px #3c2f2f;
 }
 
-.card-body {
-    padding:0;
-}
-
-#submit {
+#submit , #submit2 {
     margin-top: 10px;
-    background-color: #644117;
+    /*background-color: #644117;*/
+    background-color: #8c654c;
     color: whitesmoke;
     font-weight: bold;
+    /*border-color: #6b5f5f;*/
+    border-color: #3b352f;
+    box-shadow: 1px 2px #3c2f2f;
 }
 
 form {
+    max-width: 75%;
     display: flex;
     flex-direction: column;
     align-content: center;
+    padding-left: 160px;
 }
 
-label {
-    margin: -10px 0;
+.allTheCoffees {
+    padding-left: 20px;
 }
-/*.btn {*/
-/*    display: inline-block;*/
-/*    width: calc(60% + 50px);*/
-/*    margin-right: 15px;*/
-
-
-/*}*/
-
-/*.first-coffee, .second-coffee {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: flex-end;*/
-/*}*/

@@ -36,7 +36,7 @@ function updateCoffees(e) {
 //Add Coffee input
 
 function addCoffee() {
-    var userInput = document.forms.user.user-add;
+    var userInput = document.forms;
 
     document.log(userInput.value)
 }
